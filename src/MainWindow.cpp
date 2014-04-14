@@ -122,13 +122,13 @@ MainWindow::MainWindow(const StatusMessageList &status_messages)
    dragging(false),
    popup(status_messages, *this, CommonInterface::GetUISettings()),
    timer(*this),
+   map_rect(),
    FullScreen(false),
 #ifndef ENABLE_OPENGL
    draw_suspended(false),
 #endif
    restore_page_pending(false),
-   airspace_warning_pending(false),
-   map_rect()
+   airspace_warning_pending(false)
 {
 }
 
