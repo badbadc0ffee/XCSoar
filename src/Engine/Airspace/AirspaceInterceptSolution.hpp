@@ -43,7 +43,7 @@ struct AirspaceInterceptSolution
   /** Estimated time (s) for observer to reach intercept point */
   fixed elapsed_time;
 
-  AirspaceInterceptSolution() : distance(0), altitude(0), elapsed_time(0) {};
+  AirspaceInterceptSolution() = default;
 
 private:
   AirspaceInterceptSolution(fixed _distance, fixed _elapsed_time)
