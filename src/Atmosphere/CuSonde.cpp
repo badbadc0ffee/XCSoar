@@ -94,7 +94,7 @@ CuSonde::SetForecastTemperature(fixed val)
   }
 
   // iterate through all levels with measurements
-  for (unsigned level = 0; level <= zlevel; level++) {
+  for (unsigned level = 0; level < zlevel; level++) {
     // calculate ThermalHeight
     FindThermalHeight((unsigned short)level);
     // calculate CloudBase
