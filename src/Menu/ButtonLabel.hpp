@@ -38,6 +38,8 @@ namespace ButtonLabel {
   struct Expanded {
     bool visible, enabled;
     const TCHAR *text;
+
+    Expanded() : visible(false), enabled(false), text(nullptr) {};
   };
 
   void CreateButtonLabels(ContainerWindow &parent);

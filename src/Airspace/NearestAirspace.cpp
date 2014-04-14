@@ -93,6 +93,7 @@ public:
     assert(basic.baro_altitude_available || basic.gps_altitude_available);
     altitude.altitude = basic.nav_altitude;
     altitude.altitude_agl = calculated.altitude_agl;
+    altitude.working_band_fraction = fixed(0);
   }
 
 protected:

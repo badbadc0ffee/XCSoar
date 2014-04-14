@@ -127,7 +127,8 @@ MainWindow::MainWindow(const StatusMessageList &status_messages)
    draw_suspended(false),
 #endif
    restore_page_pending(false),
-   airspace_warning_pending(false)
+   airspace_warning_pending(false),
+   map_rect()
 {
 }
 

@@ -44,7 +44,7 @@ public:
    */
   fixed distance;
 
-  NearestAirspace():airspace(nullptr) {}
+  NearestAirspace():airspace(nullptr), distance(0) {}
   NearestAirspace(const AbstractAirspace &_airspace, fixed _distance)
     :airspace(&_airspace), distance(_distance) {}
 

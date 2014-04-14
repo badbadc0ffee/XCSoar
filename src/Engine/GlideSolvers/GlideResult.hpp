@@ -144,8 +144,18 @@ struct GlideResult {
   /** Solution validity */
   Validity validity;
 
-  /** Construct an uninitialised object. */
-  GlideResult() = default;
+  /** Construct an initialized object. */
+  GlideResult()
+      : head_wind(0), v_opt(0),
+#ifndef NDEBUG
+        start_altitude(0),
+#endif
+        min_arrival_altitude(0), vector(),
+        pure_glide_min_arrival_altitude(0), pure_glide_height(0),
+        pure_glide_altitude_difference(0), cruise_track_bearing(),
+        height_climb(0), height_glide(0), time_elapsed(0), time_virtual(0),
+        altitude_difference(0),effective_wind_speed(0), effective_wind_angle(),
+        validity(Validity::NO_SOLUTION) { };
 
   /**
    * Constructor with partial initialisation for a particular
