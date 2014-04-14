@@ -56,10 +56,9 @@ struct BrokenDate {
   int8_t day_of_week;
 
   /**
-   * Initializing default constructor,
-   * creates an instance that fails the Plausible() check.
+   * Non-initializing default constructor.
    */
-  BrokenDate() : year(0), month(0), day(0), day_of_week(-1) { };
+  BrokenDate() = default;
 
   constexpr
   BrokenDate(unsigned _year, unsigned _month, unsigned _day)
