@@ -14,7 +14,7 @@ addons:
     notification_email: florian@moesch.org
     build_command_prepend: "sudo apt-get install libsdl1.2-dev xsltproc"
     build_command: "make -j4"
-    branch_pattern: bugfix
+    branch_pattern: master
 
 script:
   - sudo apt-get install libsdl1.2-dev xsltproc
